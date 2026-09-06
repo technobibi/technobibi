@@ -7,7 +7,7 @@
 | サービス | 内容 | リンク |
 | --- | --- | --- |
 | **いこストック**（iOS） | SNS や Web で見つけた行きたい場所を保存し、リスト・地図で見返せるアプリ。複数人での共同プランニングにも対応。App Store 旅行カテゴリ 1 位・総合 11 位、公開初日に 1 万ダウンロード | [App Store](https://apps.apple.com/jp/app/id6791623306) / [ikostock.app](https://ikostock.app/) |
-| **あさよむ テック** | エンジニア向けに英語圏のテックニュースを日本語要約で毎朝配信 | [tech.asayomu.jp](https://tech.asayomu.jp/) |
+| **あさよむ テック** | エンジニア向けに英語圏のテックニュース・私信論文を日本語要約で毎朝配信 | [tech.asayomu.jp](https://tech.asayomu.jp/) |
 
 ## 公開リポジトリ
 
