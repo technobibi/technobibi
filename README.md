@@ -1,56 +1,46 @@
-# techno-bibi
+# Ryusei (Ray) Takiya — technobibi
 
-個人事業「テクノビビ」を営むフリーランスです。AI エージェント開発プロジェクトに業務委託で参画しながら、AI エージェントの研究と、自社サービスの企画・開発・運営を行っています。
+**Applied AI Engineer · Software Engineer**
 
-## エンジニア経験4年でのプロジェクト経験
+I build systems with AI built in, automate business work, and automate software development with AI agents.
+Tokyo → Vancouver, BC in December 2026. Open to roles across Canada.
 
-- ビジネスサイドの課題から、要件定義・設計・実装・リリース運用までを独力で実施
-- AI を組み込んだシステムの開発
-- **エンジニアリングの自動化**
-  - AI エージェントがソフトウェア開発の工程を自走するためのハーネス・ループ設計（Issue駆動でのPlan・設計・実装・検証・レビュー・PR提出までの自動化）
-  - AI のレビュー結果を合否判定に組み込み安全なものを自動マージ、危険なものは人間がレビューする CI/CD ゲート、
-  - マージ後のデプロイとマイグレーション適用の自動化
-  - CVE の検知から修正パッチの生成・検証・デプロイまでのパイプライン
-- Claude Code、Codex を用いた AI ネイティブな開発
-- メガベンチャーのプロジェクトへの参画
-- Java から始まり、AI を使わない基礎からの開発
-- 5名のチームのリード経験
-- 100人を超える大規模チームでの開発
-- 年間数億レコード・300万会員を超えるPOSシステムの保守
-- マルチテナント行政システムのパッケージアーキテクト設計を担当
+- **#1** on Japan’s App Store (Travel). 3 apps released solo, all ranked in their categories
+- **40,000+** installs across my apps
+- **−94%** a client’s ad-submission work, automated with AI (80 → 5 hours a month)
+- **2×+** pull requests opened and merged after rolling out my AI-automated software engineering workflow
 
-## 個人研究
+## What I build
 
-- **ローカル LLM とクラウドモデルのルーティング** — 処理内容・データの扱い・応答速度・コストに応じて実行先を振り分ける。評価ハーネスを [master-llm](https://github.com/technobibi/master-llm) で公開しています
-- **日本語命令の最適化** — 敬語や婉曲表現を含む指示、前提が省略された指示から、モデルが実行できる形へ不足分を補完する
+- **AI-agent development workflow** — a person writes the issue; agents plan, build, verify and review. A risk classifier decides what merges automatically (about 35% of PRs) and what a person reviews.
+- **AI in production systems** — ad-submission automation on the Google Ads API with an AI regulation check built in. AWS and GCP joined with Workload Identity Federation, so no long-lived keys or refresh tokens are stored.
+- **Mobile apps, solo** — Flutter, iOS and Android.
 
-- ※現在は時間を割けていません。。。
+## Products
 
-## 使用しているモデル
-
-| 用途 | モデル |
-| --- | --- |
-| 実装・エージェント実行 | Claude Code / Codex |
-| セキュリティレビュー・脆弱性検知（多モデル合議） | 上記に追加して Grok / Gemini / Sakana Fugu |
-| 画像・動画の解析 | Gemini | 他モデルでは敵わないくらい優秀 |
-
-同じ対象を複数のモデルに独立して検証させ、一致と不一致を突き合わせることで、単一モデルの見落としを減らす、一致することで確信度を上げるという構成をとっています。
-
-## 運営サービス
-
-| サービス | 内容 | リンク |
+| App | What it does | Record |
 | --- | --- | --- |
-| **いこストック**（iOS） | SNS や Web で見つけた行きたい場所を保存し、リスト・地図で見返せるアプリ。複数人での共同プランニングにも対応。App Store 旅行カテゴリ 1 位・総合 11 位。公開初日に 1 万インストール・30万 トラフィック、現在のインストール数は約 3 万 | [App Store](https://apps.apple.com/jp/app/id6791623306) / [ikostock.app](https://ikostock.app/) |
+| [**PlacePouch**（いこストック）](https://ikostock.app/) | Save places found on social media, see them on a map, plan outings together | #1 in Travel, #11 overall on Japan’s App Store · 30,000+ downloads |
+| [**Shopping Rhythm**](https://shoppingrhythm.app/) | Household stock and shopping lists shared with your family | #9 in Shopping · 11,000+ downloads |
+| [**Novelco**](https://novelco.app/) | A reading log for manga and novels | #64 in Books |
 
-このほか、アプリとゲームを開発中です。
+## Open source
 
-## 公開リポジトリ
+- [**flutter/packages #12998**](https://github.com/flutter/packages/pull/12998) (merged) — found an iOS image bug in my own app, [reported it](https://github.com/flutter/flutter/issues/193089), and fixed the root cause upstream in `image_picker_ios`.
+- [**master-llm**](https://github.com/technobibi/master-llm) — an evaluation harness that compares a local LLM plus Claude against Claude alone on accuracy, cloud cost and time. Paused.
 
-- [**master-llm**](https://github.com/technobibi/master-llm) — ローカル LLM（LM Studio）と Claude を組み合わせたオーケストレーションを、「Claude 単体」と同一タスク・同一指示で比較する評価ハーネス。精度・クラウドコスト・実時間の 3 軸で計測し、HumanEval / MBPP の取り込みとルーティング学習データの生成まで行う
-- [**OSSMate**](https://github.com/technobibi/OSSMate) — OSS のトレンドと Good First Issue を一覧化する Web アプリ（Go + React）
+## About this profile
 
-## Links
+Most of my work is in private repositories (client work and my own apps), so few repositories here are public.
 
-- Web: [techno-bibi.com](https://techno-bibi.com/)
-- X: [@techno_bibi](https://x.com/techno_bibi)
+## Stack
+
+AI agents (Claude Code, Codex, multi-model review, LLM evaluation) · Java, Spring, Go, Python, TypeScript, React, Next.js · AWS (ECS), GCP, Docker, Terraform, GitHub Actions · OAuth 2.0 / OpenID Connect, Workload Identity Federation · Flutter
+
+## Contact
+
+- Web: [techno-bibi.com/en](https://techno-bibi.com/en)
 - Mail: contact@techno-bibi.com
+- X: [@techno_bibi](https://x.com/techno_bibi)
+
+日本語のプロフィール: [techno-bibi.com](https://techno-bibi.com/)
