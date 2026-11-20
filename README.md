@@ -31,7 +31,7 @@ Tokyo → Vancouver, BC in December 2026. Open to roles across Canada.
 
 ## About this profile
 
-Most of my work is in private repositories (client work and my own apps), so few repositories here are public.
+Most of my work is in private repositories (client work and my own apps), so few repositories here are public. The contribution graph includes that private activity.
 
 ## Stack
 
